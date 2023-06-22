@@ -28,7 +28,7 @@ html body {
    grid-template-rows: auto;
    grid-template-areas: "a b c" "d e f";
    height: 100%;  
-  background-image: url("/img/procurando-nemo-12.jpg");
+  background-image: url("./img/procurando-nemo-12.jpg");
   background-size: 100% 100%;
 }
 
