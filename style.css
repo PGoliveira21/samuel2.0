@@ -1,0 +1,120 @@
+html body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+.cabecalho{
+  
+ display: flex;
+ justify-content: center;
+ background-color: #000c0c;
+ color: white;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.frame{
+    border-radius: 10px; /* Raio dos cantos */
+    overflow: hidden; 
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: "a b c" "d e f";
+   height: 100%;  
+  background-image: url("/img/procurando-nemo-12.jpg");
+  background-size: 100% 100%;
+}
+
+.bloco1 {
+    grid-area: a;
+    margin-top: 10%;
+   margin-left: 12%;
+   height: 50%;
+   
+}
+
+.bloco2 {
+    grid-area: b;
+    margin-left: 12%;
+    height: 50%;
+    margin-top: 10%;
+}
+
+.bloco3 {
+    height: 50%;
+    grid-area: c;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.bloco4 {
+    grid-area: d;
+    margin-left: 12%;
+    height: 50%;
+   margin-top: 40px;
+   margin-bottom: 10%;
+}
+
+.bloco5 {
+    grid-area: e;
+    margin-left: 12%;
+    height: 50%;
+    margin-top: 40px;
+    margin-bottom: 10%;
+}
+
+.bloco6 {
+    grid-area: f;
+    margin-left: 10%;
+    margin-top: 40px;
+    height: 50%;
+    margin-bottom: 10%;
+}
+
+.fimpagina{
+    display: flex;
+ justify-content: center;
+ background-color: #000c0c;
+ color: white;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+@media (min-width: 780px) and (max-width: 1138px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f";
+            
+
+    }
+}
+
+@media (min-width: 0px) and (max-width: 780px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f";
+            
+
+    }
+}
+  
